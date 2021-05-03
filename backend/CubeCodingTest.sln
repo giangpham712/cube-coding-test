@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubeCodingTest.Api", "CubeCodingTest.Api\CubeCodingTest.Api.csproj", "{D04A8056-D5BE-4707-8766-0D23A737E252}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubeCodingTest.Tests", "CubeCodingTest.Tests\CubeCodingTest.Tests.csproj", "{FF5170B1-706E-4DD6-834F-1AE5155D181B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D04A8056-D5BE-4707-8766-0D23A737E252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D04A8056-D5BE-4707-8766-0D23A737E252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D04A8056-D5BE-4707-8766-0D23A737E252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D04A8056-D5BE-4707-8766-0D23A737E252}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF5170B1-706E-4DD6-834F-1AE5155D181B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF5170B1-706E-4DD6-834F-1AE5155D181B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF5170B1-706E-4DD6-834F-1AE5155D181B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF5170B1-706E-4DD6-834F-1AE5155D181B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3960B09C-0319-4A4B-87AA-47BFF10D5187}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,39 @@
+<form [formGroup]="form" (submit)="submit()">
+  <mat-grid-list cols="2" rowHeight="100px" gutterSize="20px">
+    <mat-grid-tile>
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>From</mat-label>
+        <mat-select formControlName="fromScale">
+          <mat-option *ngFor="let scale of temperatureScales" [value]="scale.name">
+            {{scale.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>To</mat-label>
+        <mat-select formControlName="toScale">
+          <mat-option *ngFor="let scale of temperatureScales" [value]="scale.name">
+            {{scale.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-form-field class="full-width">
+        <input matInput type="number" placeholder="Enter temperature" formControlName="value">
+        <span matSuffix *ngIf="fromScale">{{fromScale.symbol}}</span>
+      </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-form-field class="full-width">
+        <input matInput type="number" readonly placeholder="" [value]="convertedValue | number: '.1-2'">
+        <span matSuffix *ngIf="toScale">{{toScale.symbol}}</span>
+      </mat-form-field>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <div>
+    <button type="submit" class="full-width" mat-flat-button color="primary">Convert</button>
+  </div>
+</form>
